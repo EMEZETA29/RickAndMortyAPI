@@ -1,0 +1,79 @@
+<!-- <nav class="navbar fixed-top navbar-expand-lg nav-principal" #navbarHeader>
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="col-6">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Peliculas
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Popular</a></li>
+                <li><a class="dropdown-item" href="#">En Cartelera</a></li>
+                <li><a class="dropdown-item" href="#">Proximos</a></li>
+                <li><a class="dropdown-item" href="#">Mejor Calificado</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Series de TV
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Popular</a></li>
+                  <li><a class="dropdown-item" href="#">En Cartelera</a></li>
+                  <li><a class="dropdown-item" href="#">Proximos</a></li>
+                  <li><a class="dropdown-item" href="#">Mejor Calificado</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Personas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Populares en personas</a></li>
+                </ul>
+              </li>
+
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </nav> -->
+
+
+  <header>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand" routerLink="/"
+        >RickAndMorty<span class="text-danger">API</span></a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span> 
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" routerLink="/"
+              >Home <span class="sr-only"></span></a
+            >
+          </li>
+        </ul>
+        <div class="col-xs-12 col-md-6">
+          <app-form-search></app-form-search>
+        </div>
+       </div>
+    </nav>
+  </header>

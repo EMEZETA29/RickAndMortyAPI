@@ -1,0 +1,83 @@
+html{
+  scroll-behavior: smooth;
+  
+}
+
+.container {
+  margin-top: 2rem;
+  
+  
+}
+
+.container h1{
+  font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  color:rgba(255, 255, 255, 0.556);
+  text-align: center;
+  font-size: 160px;
+}
+
+.card {
+  margin: 15px 0;
+  border-width: 10px;
+  border-color: aliceblue;
+  font-family: 'Trebuchet MS' bold;
+  text-decoration: none;
+  
+  
+
+    &:hover {
+    box-shadow: 0 5px 5px rgba(255, 229, 229, 0.242), 0 6px 6px rgba(0, 0, 0, 0.24);
+    cursor: pointer;    
+ 
+  }
+}
+
+.card-inner {
+  padding: 5px;
+}
+
+.card h2{
+  color: rgb(7, 152, 193);
+}
+
+
+
+.no-hidden{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  visibility: visible;
+}
+
+.btn{
+  background-color: rgba(210, 84, 6, 0.823);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 550;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 100px;
+  &:hover{
+    background-color: transparent;
+    color: rgba(210, 84, 6, 0.823);
+  }
+}
+
+.btn-2{
+  background-color: rgba(167, 0, 117, 0.823);
+  font-family: 'Russo One', sans-serif;
+  font-weight: 550;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  width: 100px;
+  &:hover{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+  }
+ 
+}
+
+.navbar-brand{
+  margin-left: 15px;
+  color: cyan;
+}
+

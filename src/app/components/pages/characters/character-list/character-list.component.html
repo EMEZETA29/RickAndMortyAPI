@@ -1,0 +1,42 @@
+<!-- <div>  
+    <div class="div-blanco"></div>
+    <div class="contenedor-pelicular" style="background:linear-gradient(0deg,#210f5dad,rgba(0,0,255,0.3)), url('{{url_backdrop_img}}');">
+        <div class="d-flex container">
+            <div class="poster-pelicula" style="background-image: url('{{url_poster_img}}')"></div>
+            <div class="contenido-pelicula">
+                <div *ngIf="movie" class="text-white">
+                    <h2>{{movie.title}} ({{movie.release_date | date:"YYYY"}})</h2>
+                    <p>{{movie.release_date | date:"dd/MM/YYYY"}} ({{movie.production_countries[0].iso_3166_1}}) | {{generos}}</p>
+                    <p class="fst-italic">{{movie.tagline}}</p>
+                    <h4>Resumen</h4>
+                    <p>{{movie.overview}}</p>
+                    <div class="d-flex justify-content-between flex-wrap">
+                        <div *ngFor="let item of crews" style="min-width: 200px;">
+                            <h5>{{item.name}}</h5>
+                            <p>{{item}}</p>
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="row" infinite-scroll (scrolled)="onScrollDown()">
+    <div class="col-xs-12 col-sm-6 col-md-4" *ngFor="let character of characters">
+        
+        <app-character [character]="character"></app-character>
+    <div class="col-xs-12 col-sm-12 col-md-12 mt-5 container-notFound" *ngIf="characters.length <= 0">
+        
+        <h1>rick</h1>
+    </div>
+</div>
+<button 
+[ngClass]="'no-hidden'"
+*ngIf="showGoUpButton"
+class="btn btn-2"
+(click)="onScrollTop()">
+    Subir
+</button>
